@@ -1,1 +1,1 @@
-"# NetCore" 
+"# NetCore Practicals" 
