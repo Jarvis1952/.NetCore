@@ -1,4 +1,5 @@
-﻿using ModelValidation.CustomValidators;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using ModelValidation.CustomValidators;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -34,6 +35,7 @@ namespace ModelValidation.Models
         public DateTime? FromDate { get; set; }
 
         [DateRangeValidator("FromDate", ErrorMessage = "'From Date' should be greater than or equal to 'To Date'")]
+        //[BindNever] 
         public DateTime? ToDate { get; set; }
 
         public int? Age { get; set; }

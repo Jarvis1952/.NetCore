@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D5uNE0vOOVhSkJsSZ5TZtfm3ba6hfduosmQCWX6PnAzU90DAy8K8U+3AZ3/bUwdIyLA/aEsuh9jZiwQvljWLDw==",
+  "dgSpecHash": "q6c5fL7NLA/3rIjnW/9SQlsRLtolRUWWto+IDeA8oPmP/1bLbbnjmVp3n3RlzZBQdoeRxSiGAfVNTXjgHWFGrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
+  "projectFilePath": "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

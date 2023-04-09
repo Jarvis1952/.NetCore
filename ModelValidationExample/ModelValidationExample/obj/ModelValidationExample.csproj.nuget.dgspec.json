@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj": {}
+    "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj": {
+    "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
         "projectName": "ModelValidationExample",
-        "projectPath": "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
+        "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\ModelValidationExample.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\source\\repos\\New\\ModelValidationExample\\ModelValidationExample\\obj\\",
+        "outputPath": "C:\\Users\\dell\\source\\repos\\NetCore\\ModelValidationExample\\ModelValidationExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
