@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "yww2n6OUpX1nwjrHR9qSTpgfVxCyf80TsL/H+x7cl/M=",
+  "Source": "RazorViews",
+  "BasePath": "_content/RazorViews",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RazorViews\\wwwroot",
+      "Source": "RazorViews",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\RazorViews\\RazorViews\\wwwroot\\",
+      "BasePath": "_content/RazorViews",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\NetCore\\RazorViews\\RazorViews\\wwwroot\\StyleSheet.css",
+      "SourceId": "RazorViews",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\RazorViews\\RazorViews\\wwwroot\\",
+      "BasePath": "_content/RazorViews",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

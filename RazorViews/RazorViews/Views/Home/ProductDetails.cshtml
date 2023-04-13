@@ -1,0 +1,47 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Product Details</title>
+        <meta charset="utf-8"/>
+        <link href="~/StyleSheet.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div class="page-content">
+            <h1>Products</h1>
+            <div class="box w-100">
+                <h3>Person</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>PersonName </td>
+                            <td>@Model.personData.Name</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender </td>
+                            <td>@Model.personData.PersonGender</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="box w-100">
+                <h3>Product</h3>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>ProductID </td>
+                        <td>@Model.productData.ProductID</td>
+                    </tr>
+                    <tr>
+                        <td>ProductName </td>
+                        <td>@Model.productData.ProductName</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            @*@ViewData["appTitle"];*@
+            @ViewBag.appTitle
+        </title>
+        <meta charset="utf-8"/>
+        <link href="~/StyleSheet.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="page-content">
+        <h1>Welcome</h1>
+
+        @*@if(person.DateofBirth.HasValue) {
+        double age = Math.Round((DateTime.Now - person.DateofBirth).Value.TotalDays / 365.25);
+        <h3>@age Years old</h3>
+        }
+        else{
+        <h3>Age is Unknown</h3>
+        }*@
+
+        @*@foreach (Person person in people)
+        {
+        <div> Name: @person.Name,  @person.PersonGender </div>
+        }*@
+
+        @*@{
+            List<Person>? people = (List<Person>?)ViewData["people"];
+        }*@
+
+        @foreach (Person person in ViewBag.people)
+        {
+            <div class="box float-left w-30" >
+                <h3> @person.Name </h3>
+                <table class="table w-100">
+                    <tbody>
+                        <tr>
+                            <td>Gender</td>
+                            <td>@person.PersonGender</td>
+                        </tr>
+                        <tr>
+                            <td>DateOfBirth</td>
+                            <td>@person.DateofBirth?.ToString("MM/dd/yyyy")<td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div> 
+                    <a href="/person-details/@person.Name"> Details </a>
+                </div>
+
+                <div>
+                    <a href="/product-details"> Products </a>
+                </div>
+
+            </div>
+        }
+        </div>
+        
+    </body>
+</html>
