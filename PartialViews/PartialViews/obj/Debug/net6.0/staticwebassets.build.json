@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "W0zY02tWjpVquC++mq590JjZGJPPsXfZaAqiXXoXLos=",
+  "Source": "PartialViews",
+  "BasePath": "_content/PartialViews",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PartialViews\\wwwroot",
+      "Source": "PartialViews",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\PartialViews\\PartialViews\\wwwroot\\",
+      "BasePath": "_content/PartialViews",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\NetCore\\PartialViews\\PartialViews\\wwwroot\\StyleSheet.css",
+      "SourceId": "PartialViews",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\PartialViews\\PartialViews\\wwwroot\\",
+      "BasePath": "_content/PartialViews",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
