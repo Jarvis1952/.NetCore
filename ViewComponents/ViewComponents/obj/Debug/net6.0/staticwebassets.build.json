@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "f6jlNie8q0LVVNYI+6t3UWhH4/x1Q2Bg0wDgBgb4rI4=",
+  "Source": "ViewComponents",
+  "BasePath": "_content/ViewComponents",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ViewComponents\\wwwroot",
+      "Source": "ViewComponents",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\ViewComponents\\ViewComponents\\wwwroot\\",
+      "BasePath": "_content/ViewComponents",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\NetCore\\ViewComponents\\ViewComponents\\wwwroot\\emplist.js",
+      "SourceId": "ViewComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\ViewComponents\\ViewComponents\\wwwroot\\",
+      "BasePath": "_content/ViewComponents",
+      "RelativePath": "emplist.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\emplist.js"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\NetCore\\ViewComponents\\ViewComponents\\wwwroot\\StyleSheet.css",
+      "SourceId": "ViewComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\ViewComponents\\ViewComponents\\wwwroot\\",
+      "BasePath": "_content/ViewComponents",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}
