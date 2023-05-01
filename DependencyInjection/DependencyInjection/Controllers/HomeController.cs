@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Services;
+using ServiceContracts;
 
 namespace DependencyInjection.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly CitiesService _citiesService;
+        private readonly ICitiesService _citiesService;
         
-        public HomeController()
+        public HomeController(ICitiesService citiesService)
         {
-            _citiesService = new();
+            _citiesService = citiesService;
         }
 
         [Route("/")]
