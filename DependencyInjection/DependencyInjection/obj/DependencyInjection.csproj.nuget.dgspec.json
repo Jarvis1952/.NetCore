@@ -28,6 +28,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj"
+              },
               "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj"
               }
@@ -62,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj": {
+    "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj",
-        "projectName": "Services",
-        "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj",
+        "projectName": "ServiceContracts",
+        "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\obj\\",
+        "outputPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,7 +120,66 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj": {
+                "projectPath": "C:\\Users\\dell\\source\\repos\\NetCore\\DependencyInjection\\ServiceContracts\\ServiceContracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

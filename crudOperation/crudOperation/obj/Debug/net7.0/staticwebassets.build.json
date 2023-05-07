@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "DW8zyCRnC81/41cmiCGr83fbkKU7frNeDbUFXS35RRQ=",
+  "Source": "crudOperation",
+  "BasePath": "_content/crudOperation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "crudOperation\\wwwroot",
+      "Source": "crudOperation",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\crudOperation\\crudOperation\\wwwroot\\",
+      "BasePath": "_content/crudOperation",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\NetCore\\crudOperation\\crudOperation\\wwwroot\\StyleSheet.css",
+      "SourceId": "crudOperation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\NetCore\\crudOperation\\crudOperation\\wwwroot\\",
+      "BasePath": "_content/crudOperation",
+      "RelativePath": "StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSheet.css"
+    }
+  ]
+}

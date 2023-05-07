@@ -10,3 +10,6 @@ C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\obj\Debug\net6.0
 C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\obj\Debug\net6.0\refint\Services.dll
 C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\obj\Debug\net6.0\Services.pdb
 C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\obj\Debug\net6.0\ref\Services.dll
+C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\dell\source\repos\NetCore\DependencyInjection\Services\obj\Debug\net6.0\Services.csproj.CopyComplete

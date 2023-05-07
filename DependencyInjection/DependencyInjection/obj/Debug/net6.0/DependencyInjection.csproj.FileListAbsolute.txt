@@ -25,3 +25,5 @@ C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\obj\D
 C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\obj\Debug\net6.0\DependencyInjection.pdb
 C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\obj\Debug\net6.0\DependencyInjection.genruntimeconfig.cache
 C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\obj\Debug\net6.0\ref\DependencyInjection.dll
+C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\dell\source\repos\NetCore\DependencyInjection\DependencyInjection\bin\Debug\net6.0\ServiceContracts.pdb
