@@ -26,7 +26,7 @@ namespace ServiceContracts.DTO
         public GenderOptions? Gender { get; set; }
         public Guid? CountryID { get; set; }
         public string? Address { get; set; }
-        public bool? ReceiveNewsLetters { get; set; }
+        public bool ReceiveNewsLetters { get; set; }
 
 
         /// <summary>

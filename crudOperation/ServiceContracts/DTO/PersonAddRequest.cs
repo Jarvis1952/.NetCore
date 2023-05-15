@@ -17,10 +17,14 @@ namespace ServiceContracts.DTO
         [EmailAddress(ErrorMessage = "Enter Valid EmailAddress")]
         public string? Email { get; set; }
         public DateTime? DateOfBirth { get; set; }
+
+        [Required(ErrorMessage = "Please Select Gender")]
         public GenderOptions? Gender { get; set; }
+        
+        [Required(ErrorMessage="Please Select Country")]
         public Guid? CountryID { get; set; }
         public string? Address { get; set; }
-        public bool? ReceiveNewsLetters { get; set; }
+        public bool ReceiveNewsLetters { get; set; }
 
 
         /// <summary>
