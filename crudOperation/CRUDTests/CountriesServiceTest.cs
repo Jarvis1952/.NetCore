@@ -1,4 +1,6 @@
-﻿using ServiceContracts;
+﻿using Entities;
+using Microsoft.EntityFrameworkCore;
+using ServiceContracts;
 using ServiceContracts.DTO;
 using Services;
 
@@ -9,36 +11,36 @@ namespace CRUDTests
         private readonly ICountriesService _countriesService;
         public CountriesServiceTest()
         {
-            _countriesService = new CountriesService(false);
+            _countriesService = new CountriesService(new PersonsDbContext(new DbContextOptionsBuilder<PersonsDbContext>().Options));
         }
 
         #region TestCases AddCountry
 
         //When CountryAddRequests is null, it should throw ArgumentNullException
         [Fact]
-        public void AddCountry_NullCountry()
+        public async Task AddCountry_NullCountry()
         {
             //Arrange
             CountryAddRequest? request = null;
 
             //Assert 
-            Assert.Throws<ArgumentNullException>(() => {
+            await Assert.ThrowsAsync<ArgumentNullException>(async () => {
                 //Act
-                _countriesService.AddCountry(request);
+                await _countriesService.AddCountry(request);
             });
         }
 
         //When the CountryName is null, it should throw ArgumentException
         [Fact]
-        public void AddCountry_CountryNameIsNull()
+        public async Task AddCountry_CountryNameIsNullAsync()
         {
             //Arrange
             CountryAddRequest? request = new CountryAddRequest() { CountryName = null };
 
             //Assert 
-            Assert.Throws<ArgumentException>(() => {
+            await Assert.ThrowsAsync<ArgumentException>(async() => {
                 //Act
-                _countriesService.AddCountry(request);
+                await _countriesService.AddCountry(request);
             });
         }
 
@@ -59,13 +61,13 @@ namespace CRUDTests
         }
         //When you supply proper countryName, it should insert the country to the existing list of countries 
         [Fact]
-        public void AddCountry_ProperCountryDetails()
+        public async Task AddCountry_ProperCountryDetails()
         {
             //Arrange
             CountryAddRequest? request = new () { CountryName = "Japan" };
 
             //Act
-            CountryResponse response = _countriesService.AddCountry(request);
+            CountryResponse response = await _countriesService.AddCountry(request);
 
             //Assert 
             Assert.True(response.CountryID != Guid.Empty);
@@ -76,9 +78,9 @@ namespace CRUDTests
         #region TestCase GetAllCountries
         [Fact]
         //The list of countries should be empty by default (before adding any countries)
-        public void GetAllCountries_EmptyList()
+        public async Task GetAllCountries_EmptyList()
         {
-            List<CountryResponse> actual_countryResponse = _countriesService.GetAllCountries();
+            List<CountryResponse> actual_countryResponse = await _countriesService.GetAllCountries();
 
             Assert.Empty(actual_countryResponse);
         }

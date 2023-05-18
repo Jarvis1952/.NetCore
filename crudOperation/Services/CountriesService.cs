@@ -1,33 +1,23 @@
 ﻿using ServiceContracts;
 using ServiceContracts.DTO;
 using Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Internal;
+using OfficeOpenXml;
+
 namespace Services
 {
     public class CountriesService : ICountriesService
     {
-        private readonly List<Country> _countries;
+        private readonly PersonsDbContext _db;
 
-        public CountriesService(bool initialize = true)
+        public CountriesService(PersonsDbContext personsDbContext, bool initialize = true)
         {
-            _countries = new List<Country>();
-            if (initialize)
-            {
-                _countries.AddRange(new List<Country>()
-                {
-                    new Country() { CountryID = Guid.Parse("D919D5B4-832E-44D9-80B0-1DD5A2D5E081"), CountryName = "USA" },
-
-                    new Country() { CountryID = Guid.Parse("600E27C4-18E8-4487-9151-FE7020DE943E"), CountryName = "UK" },
-
-                    new Country() { CountryID = Guid.Parse("A1C80EEE-69EF-49B1-A41C-9359E77DD111"), CountryName = "Canada" },
-
-                    new Country() { CountryID = Guid.Parse("6B69260C-3516-46A4-B7A2-E6DF45E303AC"), CountryName = "India" }
-                });
-
-            }
-            
+            _db = personsDbContext;
         }
 
-        public CountryResponse AddCountry(CountryAddRequest? countryAddRequest)
+        public async Task<CountryResponse> AddCountry(CountryAddRequest? countryAddRequest)
         {
             //Validations
             if(countryAddRequest == null)
@@ -38,7 +28,7 @@ namespace Services
             {
                 throw new ArgumentException(nameof(countryAddRequest.CountryName));
             }
-            if(_countries.Where(country=>country.CountryName == countryAddRequest.CountryName).Count() > 0)
+            if(await _db.Countries.CountAsync(country=>country.CountryName == countryAddRequest.CountryName) > 0)
             {
                 throw new ArgumentException(nameof(countryAddRequest.CountryName));
             }
@@ -49,27 +39,58 @@ namespace Services
             country.CountryID = Guid.NewGuid();
 
             //Add Country object into _countries
-            _countries.Add(country);
+            _db.Countries.Add(country);
+            await _db.SaveChangesAsync();
 
             return country.ToCountryResponse();
         }
 
-        public List<CountryResponse> GetAllCountries()
+        public async Task<List<CountryResponse>> GetAllCountries()
         {
-            return _countries.Select(country=>country.ToCountryResponse()).ToList();
+            return await _db.Countries.Select(country=>country.ToCountryResponse()).ToListAsync();
         }
 
-        public CountryResponse? GetCountryByCountryID(Guid? countryID)
+        public async Task<CountryResponse?> GetCountryByCountryID(Guid? countryID)
         {
             if (countryID == null)
                 return null;
 
-            Country? country_response_from_list = _countries.FirstOrDefault(temp => temp.CountryID == countryID);
+            Country? country_response_from_list = await _db.Countries.FirstOrDefaultAsync(temp => temp.CountryID == countryID);
 
             if (country_response_from_list == null)
                 return null;
 
             return country_response_from_list.ToCountryResponse();
+        }
+
+        public async Task<int> UploadCountriesFromExcel(IFormFile formFile)
+        {
+            MemoryStream memoryStream = new();
+            await formFile.CopyToAsync(memoryStream);
+            int CountriesInserted = 0;
+
+            using ExcelPackage excelPackage = new ExcelPackage(memoryStream);
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets["Countires"];
+
+            int rowCount = worksheet.Dimension.Rows;
+            for (int row = 2; row <= rowCount; row++)
+            {
+                string? cellValue = Convert.ToString(worksheet.Cells[row, 1].Value);
+
+                if (!string.IsNullOrEmpty(cellValue))
+                {
+                    string countryName = cellValue;
+
+                    if(_db.Countries.Where(temp=>temp.CountryName == countryName).Count() == 0)
+                    {
+                        Country country = new() { CountryName = countryName };
+                        _db.Countries.Add(country);
+                        await _db.SaveChangesAsync();
+                        CountriesInserted++;
+                    }
+                }
+            }
+            return CountriesInserted;
         }
     }
 }
